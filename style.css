@@ -1,0 +1,42 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.nav {
+    backdrop-filter: blur(15px) url(#liquid-distortion);
+}
+
+.glass-btn {
+    position: left;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: blue;
+    border: 1px solid skyblue;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+footer {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    paraghraph {
+        color: white;
+        text-align: center;
+    
+    }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.ai-loading { animation: pulse-soft 2s infinite; }
