@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* --- Global Styles --- */
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f9fafb; /* gray-50 */
+}
+
+/* --- Navigation & Header --- */
+nav {
+    /* High-end glass effect */
+    background: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+header h1 {
+    /* Gradient text for the title */
+    background: linear-gradient(135deg, #003af8 0%, #006eff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.header-btn {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s;
+}
+
+.header-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Buttons & Panels --- */
+.glass-btn {
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #1e3a8a; /* Consider improving contrast */
+    border: 1px solid skyblue;
+    transition: all 0.3s ease;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #1e3a8a 0%, #062d6b 100%);
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Social Feed Specifics --- */
+
+/* Define scrollbar variables */
+:root {
+    --scrollbar-width: 6px;
+    --scrollbar-radius: 10px;
+}
+
+/* Independent Scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #3b82f6, #1e3a8a);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #1e3a8a;
+}
+
+/* Hide horizontal scrollbar for mobile swipe grid */
+.flex.overflow-x-auto {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.flex.overflow-x-auto::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+/* --- Share Button & Animations --- */
+.bg-green-600 {
+    background-color: #25D366; /* WhatsApp Green */
+}
+
+.bg-green-600:hover {
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+    transform: scale(1.05);
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.ai-loading { 
+    animation: pulse-soft 2s infinite; 
+}
+
+/* --- Footer --- */
+footer {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    padding: 2rem 0;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
