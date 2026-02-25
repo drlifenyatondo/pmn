@@ -87,10 +87,41 @@
             btn.disabled = false;
         }
 
-        // Back to Top Logic
-        const scrollContainer = document.getElementById('post-stream');
-        const topBtn = document.getElementById('backToTop');
+        // --- Navigation & UI Logic ---
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // 1. Mobile Menu Toggle Logic (This makes your new button work!)
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
 
+    if (menuBtn && menu) {
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevents the menu from closing immediately
+            menu.classList.toggle('hidden');
+        });
+
+        // Close the menu when a link is clicked
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Close the menu if you click anywhere else on the screen
+        document.addEventListener('click', (e) => {
+            if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+    }
+
+    // 2. Back to Top Logic (Fixed to prevent errors on the Home page)
+    const scrollContainer = document.getElementById('post-stream');
+    const topBtn = document.getElementById('backToTop');
+
+    // We only run this if we are on the Socials page (where post-stream exists)
+    if (scrollContainer && topBtn) {
         scrollContainer.onscroll = function() {
             if (scrollContainer.scrollTop > 300) {
                 topBtn.style.display = "flex";
@@ -102,28 +133,7 @@
         topBtn.onclick = function() {
             scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
         };
-
-        async function sharePortfolio() {
-    const shareData = {
-        title: 'Purity Mufarowashe Nyatondo | Global Youth Leader',
-        text: 'Check out the portfolio of Purity Mufarowashe Nyatondo, advocating for youth health and leadership.',
-        url: window.location.href // This automatically grabs your current website link
-    };
-
-    try {
-        // Check if the browser supports native mobile sharing
-        if (navigator.share) {
-            await navigator.share(shareData);
-            console.log('Portfolio shared successfully');
-        } else {
-            // FALLBACK: If they are on a desktop, open WhatsApp Web directly
-            const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareData.text + " " + shareData.url)}`;
-            window.open(whatsappUrl, '_blank');
-        }
-    } catch (err) {
-        console.log('Error sharing:', err);
-        // Secondary Fallback: Just copy to clipboard
-        navigator.clipboard.writeText(shareData.url);
-        alert('Link copied to clipboard! You can now paste it in WhatsApp or LinkedIn.');
     }
-}
+});
+
+// Leave your sharePortfolio() function exactly as it is below this line!
