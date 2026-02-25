@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purity Mufarowashe Nyatondo | Global Young Leader</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+       <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-gray-50 text-gray-900">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-mirrored-md shadow-sm">
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="index.html" class="flex items-center space-x-2 text-blue-900">
-                <img src="dr-life-nyatondo-high-resolution-logo-transparent.png" alt="PMN Logo" class="h-8 rounded-full">
-            </a>
-
+            <a href="c:\Users\user\Pictures\DSC04542.jpg" class="flex items-center space-x-2 text-blue-900"><img src="dr-life-nyatondo-high-resolution-logo-transparent.png" alt="PMN Logo" class="h-8 rounded-full" ></a>
             <div class="hidden md:flex space-x-6 text-sm font-semibold uppercase tracking-wider text-gray-600">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#workshops" class="hover:text-blue-600 transition">Workshops</a>
@@ -23,50 +22,218 @@
                 <a href="#ai-tools" class="hover:text-blue-600 transition">✨ AI Tools</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </div>
-
-            <button id="menu-btn" class="md:hidden text-blue-900 focus:outline-none">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-t border-gray-100 flex flex-col p-4 space-y-4 shadow-xl">
-            <a href="#about" class="text-gray-600 font-semibold uppercase text-xs">About</a>
-            <a href="#workshops" class="text-gray-600 font-semibold uppercase text-xs">Workshops</a>
-            <a href="socials.html" class="text-blue-600 font-semibold uppercase text-xs">Social Hub</a>
-            <a href="#ai-tools" class="text-gray-600 font-semibold uppercase text-xs">✨ AI Tools</a>
-            <a href="#contact" class="text-gray-600 font-semibold uppercase text-xs">Contact</a>
         </div>
     </nav>
 
-    <header class="hero-gradient pt-32 pb-20 px-4 text-white text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Purity Mufarowashe Nyatondo</h1>
-            <p class="text-xl md:text-2xl font-light opacity-90 mb-10">Advocating for Youth Health, Leadership, and HIV/Mental Health Integration.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#contact" class="px-8 py-3 bg-white text-blue-900 rounded-full font-bold hover:bg-blue-50 transition shadow-lg">Work With Me</a>
-                <button onclick="sharePortfolio()" class="px-8 py-3 bg-green-600 text-white rounded-full font-bold hover:bg-green-700 transition shadow-lg flex items-center header-btn">
-                    <i class="fas fa-share-alt mr-2"></i> Share Portfolio
-                </button>
+    <!-- Hero Section -->
+    <header class="hero-gradient pt-32 pb-20 px-4 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="w-32 h-32 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl overflow-hidden border-4 border-blue-400">
+                <img src="IMG-20251122-WA0015(1).jpg" alt="Purity Mufarowashe Nyatondo" class="w-full h-full object-cover rounded-full">
+                
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Purity Mufarowashe Nyatondo</h1>
+            <p class="text-xl opacity-90 mb-8 font-light">Global Young Leader | HIV & Mental Health Advocate | Zvandiri Peer Supporter</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#ai-tools" class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-yellow-300 transition shadow-lg">✨ Try AI Tools</a>
+                <a href="#workshops" class="border border-white/40 px-8 py-3 rounded-full font-bold hover:bg-white/10 transition">View My Work</a>
             </div>
         </div>
     </header>
 
-    <section id="ai-tools" class="py-20 px-4">
-        <div class="max-w-4xl mx-auto">
-            <div class="glass-panel p-8 md:p-12">
-                <h2 class="text-3xl font-bold mb-6 text-blue-900">✨ AI Advocacy Assistant</h2>
-                <p class="mb-6 text-gray-600">Enter a challenge you're facing in your community, and I'll help you draft a professional advocacy pitch.</p>
-                <textarea id="challengeInput" class="w-full p-4 rounded-xl border border-gray-200 mb-4 h-32 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Example: Lack of youth-friendly mental health services at my local clinic..."></textarea>
-                <button id="genBtn" onclick="generateAdvocacy()" class="w-full py-4 bg-blue-900 text-white rounded-xl font-bold hover:bg-blue-800 transition shadow-lg">Generate Advocacy Draft ✨</button>
-                <div id="advocacyResult" class="mt-8 p-6 bg-white rounded-xl border border-blue-100 hidden prose max-w-none text-gray-800"></div>
+    <!-- Statistics -->
+    <section class="max-w-6xl mx-auto px-4 -mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-b-4 border-blue-600">
+                <div class="text-3xl font-bold text-blue-900">2.5k+</div>
+                <div class="text-gray-500 text-sm font-medium">Community Followers</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-b-4 border-blue-600">
+                <div class="text-3xl font-bold text-blue-900">24+</div>
+                <div class="text-gray-500 text-sm font-medium">Leaders Trained</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-b-4 border-blue-600">
+                <div class="text-3xl font-bold text-blue-900">IAS</div>
+                <div class="text-gray-500 text-sm font-medium">Regional Workshop Host</div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 bg-blue-900 text-white text-center">
-        <p>&copy; 2026 Purity Mufarowashe Nyatondo. All Rights Reserved.</p>
+    <!-- About Section -->
+    <section id="about" class="py-20 max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+        <p class="text-lg text-gray-600 leading-relaxed text-center">
+            I am Purity Mufarowashe Nyatondo, a 22-year-old HIV, SRHR, and Mental Health Advocate from Zimbabwe 
+            dedicated to transforming the HIV response through peer-led support, stigma reduction, and mental health integration. 
+            As a Peer Supporter at <strong><a href="https://www.zvandiri.org/">Zvandiri</a></strong>, with the 
+            <strong><a href="https://www.readymovement.org/">READY Movement</a></strong>, and as Communications Officer at 
+            <strong><a href="https://www.mentalhealthsustainability.org.zw/">Mental Health Sustainability</a></strong>, 
+            I lead strategic communications, craft empowering narratives, and create safe spaces for adolescents living with HIV.
+        </p>
+        <p class="text-lg text-gray-600 leading-relaxed text-center mt-6">
+            My journey has taken me from the REPSSI Psychosocial Support Forum in Johannesburg, to ICASA 2023 in Harare, 
+            to AIDS2024 in Munich where I was part of the IAS Young Leaders Program, and most recently to the 
+            9th International Workshop on Adolescence, SRHR, and HIV in Gaborone. In 2025, I proudly hosted the 
+            <strong><a href="https://www.iasociety.org/">IAS</a></strong> Youth Hub Workshop, bringing together young voices 
+            to shape the future of HIV and mental health advocacy.
+        </p>
+        <p class="text-lg text-gray-600 leading-relaxed text-center mt-6">
+            I believe the sky is the target, not the limit—because targets are meant to be surpassed. 
+            My vision is to move beyond surviving to thriving, and to continue building the READY to Thrive movement.
+        </p>
+    </section>
+
+
+    <!-- ✨ AI TOOLS SECTION -->
+    <section id="ai-tools" class="py-24 bg-blue-50 px-4 relative overflow-hidden">
+    
+    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+        
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-blue-900 mb-4">✨ Interactive Advocacy Tools</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Bridging the gap between technology and public health. Use these tools to amplify your voice.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="glass-panel p-6 text-center hover:-translate-y-2 transition duration-300">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600 text-xl">
+                    <i class="fas fa-keyboard"></i>
+                </div>
+                <h4 class="font-bold text-blue-900">1. Input Challenge</h4>
+                <p class="text-sm text-gray-500 mt-2">Type your advocacy challenge or a career question into the specific tool.</p>
+            </div>
+            <div class="glass-panel p-6 text-center hover:-translate-y-2 transition duration-300 delay-100">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600 text-xl">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h4 class="font-bold text-blue-900">2. AI Processing</h4>
+                <p class="text-sm text-gray-500 mt-2">Gemini AI analyzes your input using Purity's advocacy framework.</p>
+            </div>
+            <div class="glass-panel p-6 text-center hover:-translate-y-2 transition duration-300 delay-200">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600 text-xl">
+                    <i class="fas fa-file-signature"></i>
+                </div>
+                <h4 class="font-bold text-blue-900">3. Actionable Result</h4>
+                <p class="text-sm text-gray-500 mt-2">Receive a drafted pitch or mentorship advice instantly.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            
+            <div class="glass-panel p-8 transform hover:scale-[1.01] transition duration-500">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white mr-4 shadow-lg">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-900">Advocacy Pitch Generator</h3>
+                        <p class="text-xs text-gray-500">Drafts formal letters to leaders</p>
+                    </div>
+                </div>
+                <textarea id="challengeInput" class="w-full p-4 bg-white/50 border border-white/60 rounded-xl mb-4 focus:ring-2 focus:ring-blue-400 outline-none h-40 transition placeholder-gray-400" placeholder="e.g. My local clinic lacks private spaces for youth counseling..."></textarea>
+                <button onclick="generateAdvocacy()" id="genBtn" class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold py-3 rounded-xl hover:shadow-lg hover:to-blue-900 transition flex items-center justify-center">
+                    <span>Generate Draft</span> <i class="fas fa-magic ml-2"></i>
+                </button>
+                <div id="advocacyResult" class="mt-6 p-4 bg-white/60 rounded-xl text-sm text-gray-800 hidden whitespace-pre-wrap border border-white"></div>
+            </div>
+
+            <div class="glass-panel p-8 flex flex-col h-[500px] transform hover:scale-[1.01] transition duration-500">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center text-white mr-4 shadow-lg">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-900">Ask Purity's AI Mentor</h3>
+                        <p class="text-xs text-gray-500">Chat about leadership & growth</p>
+                    </div>
+                </div>
+                
+                <div id="chatHistory" class="flex-grow overflow-y-auto mb-4 space-y-3 pr-2 custom-scrollbar">
+                    <div class="bg-blue-100/80 p-3 rounded-2xl rounded-tl-none text-blue-900 text-sm inline-block">
+                        "Hi! I'm trained on Purity's leadership principles. How can I support your journey today?"
+                    </div>
+                </div>
+                
+                <div class="flex gap-2">
+                    <input type="text" id="mentorInput" class="flex-grow p-3 bg-white/50 border border-white/60 rounded-xl focus:ring-2 focus:ring-blue-400 outline-none placeholder-gray-400" placeholder="Ask a question...">
+                    <button onclick="askMentor()" id="mentorBtn" class="bg-blue-900 text-white px-5 rounded-xl hover:bg-black transition shadow-md">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 max-w-3xl mx-auto">
+            <div class="bg-white/40 backdrop-blur-md border border-white/50 rounded-lg p-4 flex items-start gap-4 shadow-sm">
+                <i class="fas fa-info-circle text-blue-600 mt-1"></i>
+                <div class="text-xs text-gray-600 leading-relaxed">
+                    <strong>Disclaimer:</strong> These interactive tools are powered by Artificial Intelligence (Gemini). While they are designed to assist with advocacy brainstorming and leadership advice, they should not replace professional medical advice or legal consultation. Please review all generated drafts for accuracy before sending them to officials.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Workshops Section -->
+    <section id="workshops" class="py-20 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+            <div class="bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row border border-gray-100">
+                <div class="md:w-1/2 bg-blue-900 flex items-center justify-center p-12 text-white">
+                    <div>
+                        <span class="bg-blue-500 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-tighter">IAS Youth Hub</span>
+                        <h3 class="text-3xl font-bold mt-4 mb-4">#StrongerTogether Workshop</h3>
+                        <p class="opacity-80 leading-relaxed mb-6">Hosted a regional workshop at Zvandiri House for 24 young leaders focusing on integrating Mental Health into HIV care pathways.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li><i class="fas fa-check-circle mr-2 text-blue-400"></i> Clinical Science Integration</li>
+                            <li><i class="fas fa-check-circle mr-2 text-blue-400"></i> Policy Advocacy Training</li>
+                            <li><i class="fas fa-check-circle mr-2 text-blue-400"></i> Psychosocial Support Tools</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2 p-8 bg-gray-50">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="aspect-square bg-blue-100 rounded-lg flex items-center justify-center text-blue-300 text-xs text-center p-2 border-2 border-dashed border-blue-200">Interactive Sessions Photo</div>
+                        <div class="aspect-square bg-blue-100 rounded-lg flex items-center justify-center text-blue-300 text-xs text-center p-2 border-2 border-dashed border-blue-200">Group Photo at Zvandiri</div>
+                        <div class="aspect-square bg-blue-100 rounded-lg flex items-center justify-center text-blue-300 text-xs text-center p-2 border-2 border-dashed border-blue-200">Guest Speakers Photo</div>
+                        <div class="aspect-square bg-blue-100 rounded-lg flex items-center justify-center text-blue-300 text-xs text-center p-2 border-2 border-dashed border-blue-200">Mental Health Module</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="flex justify-center gap-4 mt-8 flex-wrap">
+        <button onclick="sharePortfolio()" class="header-btn bg-green-600 px-6 py-2 bg-green-600 text-white rounded-full text-sm font-bold hover:bg-green-700 transition flex items-center shadow-lg hover:scale-105 active:scale-95">
+            <i class="fas fa-share-alt mr-2"></i> Share Portfolio
+        </button>
+    </div>
+
+    <!-- Contact/Footer -->
+    <footer id="contact" class="py-20 bg-white px-4 border-t border-gray-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-center">Let's Connect</h2>
+            <p class="text-white text-gray-600 mb-10">I am open to collaborations in public health, youth leadership, and mental health advocacy.</p>
+            <div class="flex justify-center space-x-8 mb-12">
+                <a href="https://www.facebook.com/DrLifeNyatondo/" target="_blank" class="text-blue-600 text-3xl hover:scale-110 transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/purity-mufarowashe-nyatondo-5a030624a/" target="_blank" class="text-blue-800 text-3xl hover:scale-110 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:nyatondopuritym@gmail.com" class="text-red-500 text-3xl hover:scale-110 transition"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/dr_life_nyatondo/" target="_blank" class="text-red-600 text-3xl hover:scale-110 transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.x.com/DrLife_Nyatondo/" target="_blank" class="text-black-600 text-3xl hover:scale-110 transition"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@dr_life_nyatondo/" target="_blank" class="text-black-600 text-3xl hover:scale-110 transition"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="text-xs text-gray-400 uppercase tracking-widest font-semibold">
+                &copy; 2026 Purity Mufarowashe Nyatondo. Built with focus & purpose.
+            </p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
