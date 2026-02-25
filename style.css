@@ -10,7 +10,7 @@ body {
 /* --- Navigation & Header --- */
 nav {
     /* High-end glass effect */
-    background: rgba(255, 255, 255, 0.6) !important;
+    background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -118,4 +118,5 @@ footer p {
     color: white;
     text-align: center;
     margin: 0;
+
 }
