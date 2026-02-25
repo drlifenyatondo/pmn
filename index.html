@@ -12,9 +12,12 @@
 <body class="bg-gray-50 text-gray-900">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-mirrored-md shadow-sm">
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="c:\Users\user\Pictures\DSC04542.jpg" class="flex items-center space-x-2 text-blue-900"><img src="dr-life-nyatondo-high-resolution-logo-transparent.png" alt="PMN Logo" class="h-8 rounded-full" ></a>
+            <a href="index.html" class="flex items-center space-x-2 text-blue-900">
+                <img src="dr-life-nyatondo-high-resolution-logo-transparent.png" alt="PMN Logo" class="h-8 rounded-full">
+            </a>
+
             <div class="hidden md:flex space-x-6 text-sm font-semibold uppercase tracking-wider text-gray-600">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#workshops" class="hover:text-blue-600 transition">Workshops</a>
@@ -22,6 +25,18 @@
                 <a href="#ai-tools" class="hover:text-blue-600 transition">✨ AI Tools</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </div>
+
+            <button id="menu-btn" class="md:hidden text-blue-900 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-t border-gray-100 flex flex-col p-4 space-y-4 shadow-xl">
+            <a href="#about" class="text-gray-600 font-semibold uppercase text-xs">About</a>
+            <a href="#workshops" class="text-gray-600 font-semibold uppercase text-xs">Workshops</a>
+            <a href="socials.html" class="text-gray-600 font-semibold uppercase text-xs">Social Hub</a>
+            <a href="#ai-tools" class="text-gray-600 font-semibold uppercase text-xs">✨ AI Tools</a>
+            <a href="#contact" class="text-gray-600 font-semibold uppercase text-xs">Contact</a>
         </div>
     </nav>
 
@@ -236,4 +251,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
