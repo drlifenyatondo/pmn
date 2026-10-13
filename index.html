@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purity Mufarowashe Nyatondo | Tech Specialist & Global Advocate</title>
+    <link rel="icon" type="image/png" href="./media/images/Dr Life Nyatondo logo.png">
+    <link rel="stylesheet" href="./style.css?v=13.0">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google reCAPTCHA v2 API -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+
+    <!-- Glassmorphic Responsive Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="./index.html" class="logo-link">
+                <img src="./media/images/Dr Life Nyatondo logo.png" alt="PMN Logo" class="site-logo">
+            </a>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="./index.html" class="nav-link active">Home</a>
+                <a href="./about" class="nav-link">About</a>
+                <a href="./my-work" class="nav-link">My Work</a>
+                <a href="./socials" class="nav-link">Socials & Blog</a>
+                <a href="./contact" class="btn btn-primary">Get In Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">&lt;tech_and_advocacy_intertwined&gt;</span>
+                <h1>Purity Mufarowashe Nyatondo</h1>
+                <p>Founder, Lead Developer & Tech Specialist at <strong>TumaiLife Technologies Co.</strong> | READY+ & Zvandiri Peer Supporter & Advocate | IAS Change Maker | U-Report Champion</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio-showcase" class="btn btn-primary">Explore Portfolio</a>
+                    <a href="./contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="glass-img-frame">
+                    <img src="./media/images/f0bc035d-378a-49d3-93d6-4e602ba29900.jpeg" alt="Purity Mufarowashe Nyatondo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Metrics Bar -->
+    <section class="metrics-section">
+        <div class="container grid grid-4">
+            <div class="metric-card">
+                <h2 class="metric-num">IAS</h2>
+                <p class="metric-label">Recognized Change Maker & Young Leader</p>
+            </div>
+            <div class="metric-card">
+                <h2 class="metric-num">Zvandiri & READY+</h2>
+                <p class="metric-label">Peer Supporter</p>
+            </div>
+            <div class="metric-card">
+                <h2 class="metric-num">UNICEF U-Report</h2>
+                <p class="metric-label">Champion</p>
+            </div>
+            <div class="metric-card">
+                <h2 class="metric-num">TumaiLife Technologies Co.</h2>
+                <p class="metric-label">Founder & Lead Developer</p>
+            </div>
+            <div class="metric-card">
+                <h2 class="metric-num">10+</h2>
+                <p class="metric-label">Global & Regional Summits</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabbed Portfolio Section -->
+    <section id="portfolio-showcase" class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">// PORTFOLIO SHOWCASE</span>
+                <h2 class="section-title">Software Engineering & Community Advocacy</h2>
+            </div>
+
+            <!-- Filter Controls -->
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+                <button onclick="filterWork('all')" id="tab-all" class="btn btn-primary">All Work</button>
+                <button onclick="filterWork('tech')" id="tab-tech" class="btn btn-secondary">Software & Tech</button>
+                <button onclick="filterWork('advocacy')" id="tab-advocacy" class="btn btn-secondary">Advocacy & Health</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-3" id="portfolio-grid">
+
+                <!-- Tech Card 1 -->
+                <div class="card card-work tech">
+                    <img src="./media/images/8fd6da50-0a89-4297-9ce7-9424c247b243.jpeg" alt="TumaiLife Workstation" class="card-img">
+                    <span class="sub-title">// FULL-STACK DEVELOPMENT</span>
+                    <h3>TumaiLife Technologies Co.</h3>
+                    <p>Founder, Lead Developer, and Tech Specialist engineering accessible web solutions, database architectures, and responsive web systems.</p>
+                    <a href="https://tumailife.com" target="_blank" class="read-more-text">Visit tumailife.com →</a>
+                </div>
+
+                <!-- Tech Card 2 -->
+                <div class="card card-work tech">
+                    <img src="./media/images/045a1d41-8f88-47c9-8c68-adbc7bf09336.jpeg" alt="Developer System Sync" class="card-img">
+                    <span class="sub-title">// WEB APPLICATION</span>
+                    <h3>Offline Community Survey Application</h3>
+                    <p>Web-based offline survey system engineered with Vite, React, Tailwind CSS, and Supabase for real-time field data gathering.</p>
+                    <span class="read-more-text">React & Supabase Custom Architecture</span>
+                </div>
+
+                <!-- Advocacy Card 1: Zvandiri & READY+ -->
+                <div class="card card-work advocacy">
+                    <img src="./media/images/f0357275-3b9d-4ee7-91a9-4955782c2736.jpeg" alt="Zvandiri and READY Movement" class="card-img">
+                    <span class="sub-title">// PEER SUPPORT & ADVOCACY</span>
+                    <h3>Zvandiri & READY+ Movement</h3>
+                    <p>Active Peer Supporter with Zvandiri and champion under the READY Movement (readymovement.org), advocating for resilient, empowered adolescents living with HIV.</p>
+                    <span class="read-more-text">Peer Supporter & READY+ Champion</span>
+                </div>
+
+                <!-- Advocacy Card 2: AIDS 2024 -->
+                <div class="card card-work advocacy">
+                    <img src="./media/images/1d0df3b2-d165-4b5b-84cf-3a933d7b3e41.jpeg" alt="AIDS 2024 Munich Germany" class="card-img">
+                    <span class="sub-title">// GLOBAL ADVOCACY</span>
+                    <h3>AIDS 2024 Conference (Munich, Germany)</h3>
+                    <p>Participated in AIDS 2024 in Munich, Germany. Recognized under the IAS Young Leaders Program and as an IAS Change Maker.</p>
+                    <span class="read-more-text">Munich, Germany | July 2024</span>
+                </div>
+
+                <!-- Advocacy Card 3: 9th International Workshop Botswana -->
+                <div class="card card-work advocacy">
+                    <img src="./media/images/1c80d083-7c57-44ee-8c35-265c48d3adcf.jpeg" alt="9th International Workshop Botswana" class="card-img">
+                    <span class="sub-title">// INTERNATIONAL WORKSHOP</span>
+                    <h3>9th International Workshop on Adolescence, SRHR & HIV</h3>
+                    <p>Invited delegate presenting perspectives at the 9th International Workshop in Gaborone, Botswana (October 2025).</p>
+                    <span class="read-more-text">Gaborone, Botswana | October 2025</span>
+                </div>
+
+                <!-- Advocacy Card 4: READY Academy Eswatini -->
+                <div class="card card-work advocacy">
+                    <img src="./media/images/4001ba5d-1708-4689-ad59-fa3ed2c3946d.jpeg" alt="READY Academy Eswatini" class="card-img">
+                    <span class="sub-title">// REGIONAL LEADERSHIP</span>
+                    <h3>READY Academy (Simunye, Eswatini)</h3>
+                    <p>Participated in the READY Academy training in Simunye, Eswatini (May 2024), empowering young advocates across Southern Africa.</p>
+                    <span class="read-more-text">Simunye, Eswatini | May 2024</span>
+                </div>
+
+                <!-- Advocacy Card 5: ICASA 2023 -->
+                <div class="card card-work advocacy">
+                    <img src="./media/images/RUIDa98c75326b9d4fd7986306faab9e08cc.jpg" alt="ICASA 2023 Harare" class="card-img">
+                    <span class="sub-title">// REGIONAL CONFERENCE</span>
+                    <h3>ICASA 2023 (Harare, Zimbabwe)</h3>
+                    <p>Participated in the 22nd International Conference on AIDS and STIs in Africa held in Harare, Zimbabwe.</p>
+                    <span class="read-more-text">Harare, Zimbabwe | December 2023</span>
+                </div>
+
+                <!-- Advocacy Card 6: REPSSI Johannesburg -->
+                <div class="card card-work advocacy">
+                    <img src="./media/images/IMG-20231005-WA0323.jpg" alt="REPSSI Johannesburg" class="card-img">
+                    <span class="sub-title">// PSYCHOSOCIAL SUPPORT</span>
+                    <h3>REPSSI Regional Psychosocial Summit</h3>
+                    <p>Participated in the REPSSI Regional Psychosocial Support Initiative summit in Johannesburg, South Africa (October 2023).</p>
+                    <span class="read-more-text">Johannesburg, South Africa | October 2023</span>
+                </div>
+
+                <!-- Advocacy Card 7: Youth Inclusive Budget Conference -->
+                <div class="card card-work advocacy">
+                    <img src="./media/images/17209d66-c551-438c-87eb-264b05503714.jpeg" alt="Youth Budget Conference" class="card-img">
+                    <span class="sub-title">// POLICY ADVOCACY</span>
+                    <h3>Youth Inclusive Budget Conference</h3>
+                    <p>Active speaker advocating for inclusive health funding for youth across both the September 2025 and October 2026 conference sessions.</p>
+                    <span class="read-more-text">2025 & 2026 Engagement</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Photo Gallery -->
+    <section class="showcase-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">// HIGHLIGHTS IN PICTURES</span>
+                <h2 class="section-title">Media & Advocacy Highlights</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="glass-img-frame">
+                    <img src="./media/images/6290ab75-8699-4850-810f-a3626fbf56c2.jpeg" alt="IAS Youth Hub Delegation" class="gallery-fit">
+                </div>
+                <div class="glass-img-frame">
+                    <img src="./media/images/20251215_150801.png" alt="Mental Health Session" class="gallery-fit">
+                </div>
+                <div class="glass-img-frame">
+                    <img src="./media/images/cfb9d75a-47e6-4393-ac33-99aaaa1b367c.jpeg" alt="Media & Documentation" class="gallery-fit">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation / Contact Form -->
+    <section id="consultation" class="consultation-section">
+        <div class="container">
+            <div class="consultation-box">
+                <div class="consultation-content">
+                    <h2>Let's Partner on Software or Advocacy Initiatives</h2>
+                    <p>Whether you need a custom web platform built by TumaiLife Technologies Co. or want to collaborate on youth health, peer support, SRHR, and mental health advocacy, send a message below.</p>
+                </div>
+                <form class="consultation-form" action="https://formspree.io/f/mgaokqke" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="inquiry_type" required>
+                            <option value="" disabled selected>Select Inquiry Type</option>
+                            <option value="software">Software & Web Development (TumaiLife Technologies Co.)</option>
+                            <option value="advocacy">HIV, SRHR & Mental Health Advocacy</option>
+                            <option value="speaking">Speaking Engagement / Panelist</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="3" placeholder="Message details..." required></textarea>
+                    </div>
+
+                    <!-- Google reCAPTCHA v2 Checkbox -->
+                    <div class="form-group" style="margin-bottom: 1.2rem;">
+                        <div class="g-recaptcha" data-sitekey="6LebweUtAAAAAOtnPZ7BzK3cuzdkgwa3iCRkftdD"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <img src="./media/images/Dr Life Nyatondo logo.png" alt="PMN Logo" class="footer-logo">
+                <p>Bridging software engineering with global HIV, SRHR, and Mental Health advocacy.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about">About</a></li>
+                    <li><a href="./my-work">My Work</a></li>
+                    <li><a href="./socials">Socials & Blog</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Affiliations</h4>
+                <ul>
+                    <li><a href="https://tumailife.com" target="_blank">TumaiLife Technologies Co.</a></li>
+                    <li><a href="https://zvandiri.org" target="_blank">Zvandiri</a></li>
+                    <li><a href="https://readymovement.org" target="_blank">READY Movement</a></li>
+                    <li><a href="https://www.iasociety.org/meet-the-ias-change-makers/purity-mufarowashe-nyatondo" target="_blank">International AIDS Society</a></li>
+                    <li><a href="https://ypnhw.co.zw" target="_blank">YPNHW</a></li>
+                    <li><a href="https://u-report.org" target="_blank">U-Report by UNICEF</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>Email: purity@tumailife.com</p>
+                <p>Email: nyatondoppuritym@gmail.com</p>
+                <p>Phone: +263 78 977 9283</p>
+                <p>Location: Harare / Chitungwiza, Zimbabwe</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Purity Mufarowashe Nyatondo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
