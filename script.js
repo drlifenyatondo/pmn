@@ -69,12 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ==========================================================================
-       3. Free AJAX Form Submission & reCAPTCHA Validation for Portfolio
+       3. Free AJAX Form Submission & reCAPTCHA Validation
        ========================================================================== */
     const consultationForms = document.querySelectorAll('.consultation-form');
 
     consultationForms.forEach((form) => {
-        // Create an error feedback element if not already present inside the form
         let statusMessage = form.querySelector('.form-status-msg');
         if (!statusMessage) {
             statusMessage = document.createElement('div');
@@ -91,6 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
 
+            // Hide any existing error or pending state messages
+            statusMessage.style.display = 'none';
+
             // 1. Verify Google reCAPTCHA completion
             let recaptchaResponse = '';
             if (typeof grecaptcha !== 'undefined') {
@@ -106,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // 2. Clear previous error state & show submitting indicator
+            // 2. Display active sending state
             statusMessage.style.display = 'block';
             statusMessage.style.background = 'rgba(0, 113, 227, 0.15)';
             statusMessage.style.border = '1px solid rgba(100, 210, 255, 0.3)';
@@ -129,7 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    // Determine root depth for redirecting to thanks.html accurately
                     const isSubfolder = window.location.pathname.includes('/about/') || 
                                         window.location.pathname.includes('/my-work/') || 
                                         window.location.pathname.includes('/socials/') || 
