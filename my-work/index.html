@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work | Purity Mufarowashe Nyatondo</title>
+    <link rel="icon" type="image/png" href="../media/images/Dr Life Nyatondo logo.png">
+    <link rel="stylesheet" href="../style.css?v=16.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Glassmorphic Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../media/images/Dr Life Nyatondo logo.png" alt="PMN Logo" class="site-logo">
+            </a>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about" class="nav-link">About</a>
+                <a href="../my-work" class="nav-link active">My Work</a>
+                <a href="../socials" class="nav-link">Socials & Blog</a>
+                <a href="../contact" class="btn btn-primary">Get In Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-header text-center" style="padding: 2rem 0 1.5rem 0;">
+        <div class="container">
+            <span class="hero-tag">&lt;portfolio_projects_and_initiatives&gt;</span>
+            <h1 style="font-size: 2.8rem; font-weight: 700; margin-bottom: 0.8rem;">Featured Projects & Engagements</h1>
+            <p style="color: var(--text-secondary); max-width: 750px; margin: 0 auto;">Explore custom software engineering systems, full-stack web applications, and global HIV, SRHR, and Mental Health advocacy initiatives.</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons & Main Portfolio Grid -->
+    <section class="services-overview" style="padding: 2rem 0 4rem 0;">
+        <div class="container">
+            
+            <!-- Dynamic Filter Controls -->
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+                <button onclick="filterWork('all')" id="tab-all" class="btn btn-primary">All Projects</button>
+                <button onclick="filterWork('tech')" id="tab-tech" class="btn btn-secondary">Software & Tech</button>
+                <button onclick="filterWork('advocacy')" id="tab-advocacy" class="btn btn-secondary">Advocacy & Health</button>
+            </div>
+
+            <!-- Portfolio Projects Grid -->
+            <div class="grid grid-3" id="portfolio-grid">
+
+                <!-- Tech Project 1: TumaiLife Technologies Co. -->
+                <div class="card card-work tech">
+                    <img src="../media/images/8fd6da50-0a89-4297-9ce7-9424c247b243.jpeg" alt="TumaiLife Technologies Co." class="card-img">
+                    <span class="sub-title">// FULL-STACK DEVELOPMENT</span>
+                    <h3>TumaiLife Technologies Co.</h3>
+                    <p>Official website and core platform built for TumaiLife Technologies Co., delivering custom software solutions, database architectures, and digital services.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem;">
+                        <a href="https://tumailife.com" target="_blank" class="read-more-text">Visit tumailife.com <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tech Project 2: Offline Community Survey Application -->
+                <div class="card card-work tech">
+                    <img src="../media/images/045a1d41-8f88-47c9-8c68-adbc7bf09336.jpeg" alt="Offline Community Survey App" class="card-img">
+                    <span class="sub-title">// REACT & SUPABASE</span>
+                    <h3>Offline Community Survey App</h3>
+                    <p>Engineered a web application featuring local offline data caching, real-time sync capabilities, and structured database schema policies with Supabase and Vite.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem;">
+                        <span class="read-more-text">Vite + React + Tailwind + Supabase</span>
+                    </div>
+                </div>
+
+                <!-- Tech Project 3: Takudzwa Dongo Portfolio -->
+                <div class="card card-work tech">
+                    <img src="../media/images/Takudzwa Dongo.jpg" alt="Takudzwa Dongo Portfolio Website" class="card-img">
+                    <span class="sub-title">// WEB DESIGN & DEPLOYMENT</span>
+                    <h3>Takudzwa Dongo Portfolio</h3>
+                    <p>Designed, customized, and deployed a modern personal portfolio website featuring custom UI components and smooth navigation.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem;">
+                        <a href="https://takudzwadongo.gt.tc" target="_blank" class="read-more-text">Visit Portfolio <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tech Project 4: Self-Made Image -->
+                <div class="card card-work tech">
+                    <img src="../media/images/SMI Logo.png" alt="Self-Made Image Platform" class="card-img">
+                    <span class="sub-title">// BRANDING & WEB BUILD</span>
+                    <h3>Self-Made Image Platform</h3>
+                    <p>Custom web build focused on brand presentation, structured landing pages, and interactive media integration.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem;">
+                        <span class="read-more-text">HTML5 + CSS3 + Custom JS</span>
+                    </div>
+                </div>
+
+                <!-- Advocacy Project 1: Zvandiri Peer Support -->
+                <div class="card card-work advocacy">
+                    <img src="../media/images/c33e67e1-da4f-4ff1-8795-d11b2234d604.jpeg" alt="Zvandiri Peer Support" class="card-img">
+                    <span class="sub-title">// PEER SUPPORT & MENTAL HEALTH</span>
+                    <h3>Zvandiri Peer Supporter</h3>
+                    <p>Dedicated Peer Supporter offering peer-led psychosocial care, HIV treatment adherence guidance, and mental health counseling for adolescents.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem;">
+                        <a href="https://zvandiri.org" target="_blank" class="read-more-text">Learn about Zvandiri <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Advocacy Project 2: READY+ Movement Advocate -->
+                <div class="card card-work advocacy">
+                    <img src="../media/images/f0357275-3b9d-4ee7-91a9-4955782c2736.jpeg" alt="READY Movement Advocate" class="card-img">
+                    <span class="sub-title">// REGIONAL YOUTH ADVOCACY</span>
+                    <h3>READY Movement Advocate (READY+)</h3>
+                    <p>Advocating under the READY Movement (readymovement.org) to empower resilient adolescents and young people living with HIV across Southern Africa.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem;">
+                        <a href="https://readymovement.org" target="_blank" class="read-more-text">Visit readymovement.org <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Advocacy Project 3: AIDS 2024 Munich -->
+                <div class="card card-work advocacy">
+                    <img src="../media/images/20261013_142439.png" alt="AIDS 2024 Munich Germany" class="card-img">
+                    <span class="sub-title">// GLOBAL SUMMIT</span>
+                    <h3>AIDS 2024 Conference (Munich, Germany)</h3>
+                    <p>Participated in Munich, Germany as an IAS Change Maker and IAS Young Leader, presenting youth-focused HIV/SRHR intervention frameworks.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem;">
+                        <span class="read-more-text">IAS Change Maker | July 2024</span>
+                    </div>
+                </div>
+
+                <!-- Advocacy Project 4: 9th SRHR & HIV Workshop Botswana -->
+                <div class="card card-work advocacy">
+                    <img src="../media/images/1c80d083-7c57-44ee-8c35-265c48d3adcf.jpeg" alt="International Workshop Botswana" class="card-img">
+                    <span class="sub-title">// INTERNATIONAL DELEGATE</span>
+                    <h3>9th International Workshop on SRHR & HIV</h3>
+                    <p>Delegate and speaker addressing adolescent health challenges and peer support models in Gaborone, Botswana (October 2025).</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem;">
+                        <span class="read-more-text">Gaborone, Botswana | Oct 2025</span>
+                    </div>
+                </div>
+
+                <!-- Advocacy Project 5: Youth Inclusive Budget Conference -->
+                <div class="card card-work advocacy">
+                    <img src="../media/images/17209d66-c551-438c-87eb-264b05503714.jpeg" alt="Youth Budget Conference Speaker" class="card-img">
+                    <span class="sub-title">// POLICY & FUNDING ADVOCACY</span>
+                    <h3>Youth Inclusive Budget Conference</h3>
+                    <p>Advocated for equitable resource allocation, healthcare financing, and budget transparency for adolescent health services in Zimbabwe.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem;">
+                        <span class="read-more-text">2025 & 2026 High-Level Sessions</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <img src="../media/images/Dr Life Nyatondo logo.png" alt="PMN Logo" class="footer-logo">
+                <p>Bridging software engineering with global HIV, SRHR, and Mental Health advocacy.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about">About</a></li>
+                    <li><a href="../my-work">My Work</a></li>
+                    <li><a href="../socials">Socials & Blog</a></li>
+                    <li><a href="../contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Affiliations</h4>
+                <ul>
+                    <li><a href="https://tumailife.com" target="_blank">TumaiLife Technologies Co.</a></li>
+                    <li><a href="https://zvandiri.org" target="_blank">Zvandiri</a></li>
+                    <li><a href="https://readymovement.org" target="_blank">READY Movement</a></li>
+                    <li><a href="https://www.iasociety.org/meet-the-ias-change-makers/purity-mufarowashe-nyatondo"
+                            target="_blank">International AIDS Society</a></li>
+                    <li><a href="https://ypnhw.co.zw" target="_blank">YPNHW</a></li>
+                    <li><a href="https://u-report.org" target="_blank">U-Report by UNICEF</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>Email: purity@tumailife.com</p>
+                <p>Email: nyatondoppuritym@gmail.com</p>
+                <p>Phone: +263 78 977 9283</p>
+                <p>Location: Harare / Chitungwiza, Zimbabwe</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Purity Mufarowashe Nyatondo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

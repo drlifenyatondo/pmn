@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socials & Blog | Purity Mufarowashe Nyatondo</title>
+    <link rel="icon" type="image/png" href="../media/images/Dr Life Nyatondo logo.png">
+    <link rel="stylesheet" href="../style.css?v=17.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Glassmorphic Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../media/images/Dr Life Nyatondo logo.png" alt="PMN Logo" class="site-logo">
+            </a>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about" class="nav-link">About</a>
+                <a href="../my-work" class="nav-link">My Work</a>
+                <a href="../socials" class="nav-link active">Socials & Blog</a>
+                <a href="../contact" class="btn btn-primary">Get In Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header Banner -->
+    <section class="page-header text-center" style="padding: 2rem 0 1.5rem 0;">
+        <div class="container">
+            <span class="hero-tag">&lt;advocacy_insights_and_updates&gt;</span>
+            <h1 style="font-size: 2.8rem; font-weight: 700; margin-bottom: 0.8rem;">Socials & Advocacy Blog</h1>
+            <p style="color: var(--text-secondary); max-width: 780px; margin: 0 auto;">
+                Sharing facts, research insights, and community perspectives on HIV prevention, Sexual & Reproductive Health Rights (SRHR), and Mental Health sustainability.
+            </p>
+        </div>
+    </section>
+
+    <!-- Social Media Connection Hub -->
+    <section class="showcase-section" style="padding: 1.5rem 0 3rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">// CONNECT ACROSS PLATFORMS</span>
+                <h2 class="section-title">Social Media Hub</h2>
+            </div>
+
+            <div class="grid grid-4">
+                <a href="https://www.linkedin.com/in/drlifenyatondo/" target="_blank" class="card text-center" style="align-items: center; justify-content: center; padding: 1.5rem;">
+                    <i class="fa-brands fa-linkedin" style="font-size: 2.5rem; color: #0a66c2; margin-bottom: 0.8rem;"></i>
+                    <h3>LinkedIn</h3>
+                    <p style="font-size: 0.85rem;">Professional updates, conference summaries, and leadership articles.</p>
+                </a>
+
+                <a href="https://x.com/@DrLife_Nyatondo" target="_blank" class="card text-center" style="align-items: center; justify-content: center; padding: 1.5rem;">
+                    <i class="fa-brands fa-twitter" style="font-size: 2.5rem; color: var(--cyan-glow); margin-bottom: 0.8rem;"></i>
+                    <h3>X (Twitter)</h3>
+                    <p style="font-size: 0.85rem;">Live summit highlights, youth health threads, and advocacy news.</p>
+                </a>
+
+                <a href="https://facebook.com/drlifenyatondo" target="_blank" class="card text-center" style="align-items: center; justify-content: center; padding: 1.5rem;">
+                    <i class="fa-brands fa-facebook" style="font-size: 2.5rem; color: #1877f2; margin-bottom: 0.8rem;"></i>
+                    <h3>Facebook</h3>
+                    <p style="font-size: 0.85rem;">Community outreach updates and Zvandiri peer support event recaps.</p>
+                </a>
+
+                <a href="https://www.instagram.com/dr_life_nyatondo/" target="_blank" class="card text-center" style="align-items: center; justify-content: center; padding: 1.5rem;">
+                    <i class="fa-brands fa-instagram" style="font-size: 2.5rem; color: #e4405f; margin-bottom: 0.8rem;"></i>
+                    <h3>Instagram</h3>
+                    <p style="font-size: 0.85rem;">Photo highlights, behind-the-scenes advocacy, and youth stories.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog & Knowledge Feed -->
+    <section class="services-overview" style="padding: 2rem 0 4rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">// KNOWLEDGE BASE</span>
+                <h2 class="section-title">HIV, SRHR & Mental Health Articles</h2>
+            </div>
+
+            <!-- Filter Controls -->
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+                <button onclick="filterBlog('all')" id="blog-tab-all" class="btn btn-primary">All Articles</button>
+                <button onclick="filterBlog('hiv')" id="blog-tab-hiv" class="btn btn-secondary">HIV Facts</button>
+                <button onclick="filterBlog('srhr')" id="blog-tab-srhr" class="btn btn-secondary">Sexual and Reproductive Health</button>
+                <button onclick="filterBlog('mental')" id="blog-tab-mental" class="btn btn-secondary">Mental Health</button>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="grid grid-3" id="blog-grid">
+
+                <!-- Blog Post 1: Mental Health -->
+                <article class="card card-blog mental">
+                    <img src="../media/images/Uncle Comfort Explaining the Emotions Wheel.jpg" alt="Mental Health Emotions Wheel Session" class="card-img">
+                    <span class="sub-title">// MENTAL HEALTH</span>
+                    <h3>Navigating Emotional Well-being for Young Advocates</h3>
+                    <p>Understanding psychological resilience, coping mechanisms, and emotional balance using structured self-inquiry tools.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.8rem; color: var(--text-secondary);"><i class="fa-regular fa-clock"></i> 4 min read</span>
+                        <span class="read-more-text"><a href="./navigating-emotional-wellbeing.html" class="read-more-text">Read Article →</a></span>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2: HIV Awareness -->
+                <article class="card card-blog hiv">
+                    <img src="../media/images/RUIDd65d1be9d33b4db4837e7b0de5afd1be.jpg" alt="Purity doing HIV Programming" class="card-img">
+                    <span class="sub-title">// HIV ADVOCACY</span>
+                    <h3>The Power of Peer-Led HIV Care Systems</h3>
+                    <p>How peer support models like Zvandiri transform viral suppression outcomes and reduce stigma for adolescents living with HIV.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.8rem; color: var(--text-secondary);"><i class="fa-regular fa-clock"></i> 5 min read</span>
+                        <span class="read-more-text"><a href="./power-of-peer-led-hiv-care.html" class="read-more-text">Read Article →</a></span>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3: SRHR -->
+                <article class="card card-blog srhr">
+                    <img src="../media/images/IMG_0638-01-1024x683.jpg" alt="READY Academy Workshop" class="card-img">
+                    <span class="sub-title">// SRHR RIGHTS</span>
+                    <h3>Empowering Youth through Comprehensive SRHR Education</h3>
+                    <p>Key takeaways from regional workshops on advancing sexual reproductive health rights and youth policy inclusion across Southern Africa.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.8rem; color: var(--text-secondary);"><i class="fa-regular fa-clock"></i> 6 min read</span>
+                        <span class="read-more-text"><a href="./empowering-youth-srhr-education.html" class="read-more-text">Read Article →</a></span>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4: HIV Facts & Science -->
+                <article class="card card-blog hiv">
+                    <img src="../media/images/RUIDef01f3d6329e4669928a5f1963ea5f06.jpg" alt="AIDS 2024 Science Summit" class="card-img">
+                    <span class="sub-title">// HIV RESEARCH</span>
+                    <h3>U=U and Modern Treatment Breakthroughs</h3>
+                    <p>Explaining Undetectable = Untransmittable (U=U) science and how modern antiretroviral therapy empowers healthy futures.</p>
+                    <div style="margin-top: auto; padding-top: 0.8rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.8rem; color: var(--text-secondary);"><i class="fa-regular fa-clock"></i> 3 min read</span>
+                        <span class="read-more-text"><a href="./u-equals-u-and-treatment-breakthroughs.html" class="read-more-text">Read Article →</a></span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <img src="../media/images/Dr Life Nyatondo logo.png" alt="PMN Logo" class="footer-logo">
+                <p>Bridging software engineering with global HIV, SRHR, and Mental Health advocacy.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about">About</a></li>
+                    <li><a href="../my-work">My Work</a></li>
+                    <li><a href="../socials">Socials & Blog</a></li>
+                    <li><a href="../contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Affiliations</h4>
+                <ul>
+                    <li><a href="https://tumailife.com" target="_blank">TumaiLife Technologies Co.</a></li>
+                    <li><a href="https://zvandiri.org" target="_blank">Zvandiri</a></li>
+                    <li><a href="https://readymovement.org" target="_blank">READY Movement</a></li>
+                    <li><a href="https://www.iasociety.org/meet-the-ias-change-makers/purity-mufarowashe-nyatondo"
+                            target="_blank">International AIDS Society</a></li>
+                    <li><a href="https://ypnhw.co.zw" target="_blank">YPNHW</a></li>
+                    <li><a href="https://u-report.org" target="_blank">U-Report by UNICEF</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>Email: purity@tumailife.com</p>
+                <p>Email: nyatondoppuritym@gmail.com</p>
+                <p>Phone: +263 78 977 9283</p>
+                <p>Location: Harare / Chitungwiza, Zimbabwe</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Purity Mufarowashe Nyatondo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        /**
+         * Blog Category Filtering Function
+         * @param {string} category - 'all', 'hiv', 'srhr', or 'mental'
+         */
+        function filterBlog(category) {
+            const articles = document.querySelectorAll('.card-blog');
+            const tabs = ['all', 'hiv', 'srhr', 'mental'];
+
+            tabs.forEach(tab => {
+                const btn = document.getElementById(`blog-tab-${tab}`);
+                if (btn) btn.className = 'btn btn-secondary';
+            });
+
+            const activeBtn = document.getElementById(`blog-tab-${category}`);
+            if (activeBtn) activeBtn.className = 'btn btn-primary';
+
+            articles.forEach(article => {
+                if (category === 'all' || article.classList.contains(category)) {
+                    article.style.display = 'flex';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
